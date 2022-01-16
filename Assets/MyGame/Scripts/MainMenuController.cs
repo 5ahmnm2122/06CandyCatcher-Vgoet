@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
+    Scene scene;
+
+    private void Start()
+    {
+        scene = SceneManager.GetActiveScene();
+    }
     public void StartGame()
     {
         SceneManager.LoadScene("StartScene");
@@ -12,7 +18,10 @@ public class MainMenuController : MonoBehaviour
 
     public void Play()
     {
-        GameManager.instance.SaveName();
+        if (scene.buildIndex == 0)
+        {
+            GameManager.instance.SaveName(); }
+
         SceneManager.LoadScene("MainScene");
     }
 }

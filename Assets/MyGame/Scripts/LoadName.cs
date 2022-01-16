@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class LoadName : MonoBehaviour
 {
-
+    public int candyScore;
 
     void Start()
     {

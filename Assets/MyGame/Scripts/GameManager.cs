@@ -43,11 +43,11 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void IncrementScore()
+    public void IncrementScore(int differentScores)
     {
         if(gameOver == false)
         {
-            score++;
+            score+= differentScores;
             scoreText.text = score.ToString();
             
         }
