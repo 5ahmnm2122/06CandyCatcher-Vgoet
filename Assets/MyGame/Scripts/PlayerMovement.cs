@@ -37,4 +37,17 @@ public class PlayerMovement : MonoBehaviour
         transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
 
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "BadCandy")
+        {
+            GameManager.instance.DecreaseLives();
+          
+        }
+
+    }
 }
+

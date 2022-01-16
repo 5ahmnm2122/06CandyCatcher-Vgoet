@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public GameObject lifesholder;
+    public Text lifesholder;
     public GameObject gameOverPanel;
 
     public Text scoreText;
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         if (lives > 0)
         {
             lives--;
-            lifesholder.transform.GetChild(lives).gameObject.SetActive(false);
+            lifesholder.text = lives.ToString();
             print(lives);
         }
 

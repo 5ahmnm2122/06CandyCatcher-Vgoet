@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 388622751274086053}
   - component: {fileID: 7664124291448594105}
   - component: {fileID: 8262540340708302559}
-  - component: {fileID: 3969393588091963325}
+  - component: {fileID: 2710257421970955373}
   m_Layer: 0
   m_Name: badCandy
-  m_TagString: Untagged
+  m_TagString: BadCandy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,7 +122,7 @@ CircleCollider2D:
   m_Offset: {x: 0.03344448, y: 0}
   serializedVersion: 2
   m_Radius: 2.1407704
---- !u!114 &3969393588091963325
+--- !u!114 &2710257421970955373
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,6 +131,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5966743192947568555}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e310122bd07829d43aa6bc9c3d383795, type: 3}
+  m_Script: {fileID: 11500000, guid: 90d86aa144aa894408c80eb9ad708951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
