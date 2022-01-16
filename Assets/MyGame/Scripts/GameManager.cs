@@ -9,8 +9,6 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public Text lifesholder;
-    public GameObject gameOverPanel;
-
     public Text scoreText;
 
     int score = 0;
@@ -47,19 +45,11 @@ public class GameManager : MonoBehaviour
 
         if (lives <= 0)
         {
-            gameOver = true;
-            GameOver();
+            SceneManager.LoadScene("GOver");
         }
     }
 
 
-    public void GameOver()
-    {
-       
-        GameObject.Find("Player").GetComponent<PlayerMovement>().canMove = false;
-
-        gameOverPanel.SetActive(true);
-        print("GameOver");
-    }
+    
 }
 
