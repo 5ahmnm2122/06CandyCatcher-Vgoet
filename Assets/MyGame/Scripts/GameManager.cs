@@ -10,15 +10,37 @@ public class GameManager : MonoBehaviour
 
     public Text lifesholder;
     public Text scoreText;
+    
+    public int score = 0;
+    
 
-    int score = 0;
     int lives = 3;
 
     bool gameOver = false;
 
+    /*---------------------------------------------*/
+    public Text inputField;
+    public Text nameText;
+    /*---------------------------------------------*/
+
+    public void SaveScore()
+    {
+
+        PlayerPrefs.SetInt("amountOfBeans", score);
+    }
+    
+    /*---------------------------------------------*/
+    public void SaveName()
+    {
+        PlayerPrefs.SetString("username", inputField.text);
+    }
+    /*---------------------------------------------*/
+
+
     private void Awake()
     {
         instance = this;
+
     }
 
     public void IncrementScore()
@@ -27,11 +49,11 @@ public class GameManager : MonoBehaviour
         {
             score++;
             scoreText.text = score.ToString();
-
-            print(score);
+            
         }
 
     }
+
 
     public void DecreaseLives()
     {
@@ -46,10 +68,12 @@ public class GameManager : MonoBehaviour
         if (lives <= 0)
         {
             SceneManager.LoadScene("GOver");
+            
         }
     }
 
 
     
+
 }
 

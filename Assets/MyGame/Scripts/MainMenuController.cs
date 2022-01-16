@@ -12,6 +12,7 @@ public class MainMenuController : MonoBehaviour
 
     public void Play()
     {
+        GameManager.instance.SaveName();
         SceneManager.LoadScene("MainScene");
     }
 }

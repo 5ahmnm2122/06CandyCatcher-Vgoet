@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public string levelToLoad;
-    private float timer = 30;
+    private float timer = 10;
     private Text timerSeconds;
 
 
@@ -22,6 +22,7 @@ public class Timer : MonoBehaviour
         
         if (timer <= 0)
         {
+            GameManager.instance.SaveScore();
             Application.LoadLevel(levelToLoad);
         }
     }
