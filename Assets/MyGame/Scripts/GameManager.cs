@@ -9,40 +9,45 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public Text lifesholder;
-    public Text scoreText;
-    
-    public int score = 0;
-    
+    public int lives = 3;
 
-    int lives = 3;
+    public Text scoreText;
+    public int score = 0;
+
+    
+    /*public Text inputField;*/
+    public InputField inputField;
+
 
     bool gameOver = false;
-
     /*---------------------------------------------*/
-    public Text inputField;
-    public Text nameText;
     /*---------------------------------------------*/
+    /* Save Name ------------------------------------------- */
+    public void TakeName()
+    {
+        PlayerPrefs.SetString("user_name", inputField.text);
+        Debug.Log("Your Name is" + PlayerPrefs.GetString(" user_name"));
+      
+    }
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
+
+   
+
+    /* Save Score ------------------------------------------- */
     public void SaveScore()
     {
 
         PlayerPrefs.SetInt("amountOfBeans", score);
     }
-    
-    /*---------------------------------------------*/
-    public void SaveName()
-    {
-        PlayerPrefs.SetString("username", inputField.text);
-    }
-    /*---------------------------------------------*/
 
 
-    private void Awake()
-    {
-        instance = this;
 
-    }
-
+    /* Increase Score (Text) --------------------------------- */
     public void IncrementScore(int differentScores)
     {
         if(gameOver == false)
@@ -53,8 +58,9 @@ public class GameManager : MonoBehaviour
         }
 
     }
+    
 
-
+    /* Decrease Lives ---------------------------------------- */
     public void DecreaseLives()
     {
         if (lives > 0)
@@ -64,7 +70,7 @@ public class GameManager : MonoBehaviour
             print(lives);
         }
 
-
+    /* When 0 Lives -> Load GameOver Scene ------------------- */
         if (lives <= 0)
         {
             SceneManager.LoadScene("GOver");

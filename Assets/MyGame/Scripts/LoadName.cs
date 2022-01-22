@@ -5,15 +5,14 @@ using UnityEngine.UI;
 
 public class LoadName : MonoBehaviour
 {
-    public int candyScore;
 
+    public Text NameBox;
+
+    // Start is called before the first frame update
     void Start()
     {
-        Text inputField = gameObject.GetComponent<Text>();
-
-        inputField.text = PlayerPrefs.GetString("username").ToString();
+        NameBox.text = PlayerPrefs.GetString("user_name");
     }
 
-
-
+  
 }

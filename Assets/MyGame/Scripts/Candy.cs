@@ -17,6 +17,12 @@ public class Candy : MonoBehaviour
           
         }
 
-    
+        if (collision.gameObject.tag == "Floor")
+        {
+            
+            Destroy(gameObject);
+
+
+        }
     }
 }

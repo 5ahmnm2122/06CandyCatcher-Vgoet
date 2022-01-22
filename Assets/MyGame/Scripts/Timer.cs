@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public string levelToLoad;
-    private float timer = 10;
+    private float timer = 30;
     private Text timerSeconds;
 
 

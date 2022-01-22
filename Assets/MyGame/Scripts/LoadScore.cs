@@ -12,10 +12,5 @@ public class LoadScore : MonoBehaviour
 
         scoreText.text = PlayerPrefs.GetInt("amountOfBeans").ToString();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

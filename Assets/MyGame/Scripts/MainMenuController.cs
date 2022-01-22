@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
@@ -18,10 +19,13 @@ public class MainMenuController : MonoBehaviour
 
     public void Play()
     {
+        
+        SceneManager.LoadScene("MainScene");
+
         if (scene.buildIndex == 0)
         {
-            GameManager.instance.SaveName(); }
+            GameManager.instance.TakeName();
+        }
 
-        SceneManager.LoadScene("MainScene");
     }
 }
