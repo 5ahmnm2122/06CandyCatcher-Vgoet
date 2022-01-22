@@ -1,7 +1,7 @@
 # 06CandyCatcher-Vgoet
 
 ### Github Pages Link
-http://localhost:1113/
+https://5ahmnm2122.github.io/06CandyCatcher-Vgoet/
 
 ### Project description: 
 Game with 3 scenes, candy spawner, moveable player, timer, score and username, 4 different objects with 3 different points and live
