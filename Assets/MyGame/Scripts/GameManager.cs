@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -14,14 +12,12 @@ public class GameManager : MonoBehaviour
     public Text scoreText;
     public int score = 0;
 
-    
-    /*public Text inputField;*/
     public InputField inputField;
-
 
     bool gameOver = false;
     /*---------------------------------------------*/
     /*---------------------------------------------*/
+
     /* Save Name ------------------------------------------- */
     public void TakeName()
     {
