@@ -12,28 +12,15 @@ public class GameManager : MonoBehaviour
     public Text scoreText;
     public int score = 0;
 
-    public InputField inputField;
-
     bool gameOver = false;
     /*---------------------------------------------*/
     /*---------------------------------------------*/
-
-    /* Save Name ------------------------------------------- */
-    public void TakeName()
-    {
-        PlayerPrefs.SetString("user_name", inputField.text);
-        Debug.Log("Your Name is" + PlayerPrefs.GetString(" user_name"));
-      
-    }
 
     private void Awake()
     {
         instance = this;
     }
-
-
-   
-
+    
     /* Save Score ------------------------------------------- */
     public void SaveScore()
     {

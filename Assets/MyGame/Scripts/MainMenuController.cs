@@ -21,7 +21,7 @@ public class MainMenuController : MonoBehaviour
 
         if (scene.buildIndex == 0)
         {
-            GameManager.instance.TakeName();
+            InputFieldName.instance.TakeName();
         }
 
     }
