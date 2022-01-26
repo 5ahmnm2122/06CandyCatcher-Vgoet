@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
     /* When 0 Lives -> Load GameOver Scene ------------------- */
         if (lives <= 0)
         {
-            SceneManager.LoadScene("GOver");
+            SceneManager.LoadScene("GameOver");
             
         }
     }

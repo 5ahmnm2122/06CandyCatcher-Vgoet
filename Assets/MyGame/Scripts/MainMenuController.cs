@@ -16,12 +16,11 @@ public class MainMenuController : MonoBehaviour
 
     public void Play()
     {
-        
         SceneManager.LoadScene("MainScene");
 
-        if (scene.buildIndex == 0)
+        if (scene.buildIndex == 1)
         {
-            InputFieldName.instance.TakeName();
+            InputFieldName.instanceInput.TakeName();
         }
 
     }
