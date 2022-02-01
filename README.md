@@ -10,7 +10,7 @@ Game with 3 scenes, candy spawner, moveable player, timer, score and username, 4
 OS: Windows 10 Pro, Unity 2020.3.18f1, Visual Studio
 
 ### Target platform: 
-WebGL
+WebGL (960x600)
 
 ### Necessary setup/execution steps: 
 -/-
@@ -35,4 +35,4 @@ https://assetstore.unity.com/packages/2d/gui/sweet-land-gui-208285
 ### Project state: 
 finished - 100%
 
-Copyright by Victoria Götte
+Copyright by Victoria GÃ¶tte
